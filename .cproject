@@ -30,14 +30,7 @@
 								<option id="gnu.cpp.compiler.option.include.paths.394786621" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${WPILIB}/cpp/current/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc}/2357 - 2016 Code/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2357 - 2016 Code/src/Pixy}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\Robotics\Downloads\boost_1_60_0\boost_1_60_0\boost&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2357 - 2016 Code/src/Pixy/pixy-master/misc/gcc/m0/inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2357 - 2016 Code/src/Pixy/pixy-master/misc/gcc/pixy_m0/inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2357 - 2016 Code/src/Pixy/pixy-master/misc/gcc/pixy_m4/inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2357 - 2016 Code/src/Pixy/pixy-master/misc/gcc/video/inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2357 - 2016 Code/src/Pixy/pixy-master/src/common/inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/2357 - 2016 Code/src/Pixy/pixy-master/src/host/libpixyusb/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\Robotics\Downloads\boost_1_60_0\boost_1_60_0&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\Robotics\Downloads\libusb-1.0.20\libusb&quot;"/>
 								</option>
