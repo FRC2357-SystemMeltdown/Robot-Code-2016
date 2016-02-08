@@ -30,9 +30,6 @@
 								<option id="gnu.cpp.compiler.option.include.paths.394786621" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${WPILIB}/cpp/current/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc}/2357 - 2016 Code/src&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Robotics\Downloads\boost_1_60_0\boost_1_60_0\boost&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Robotics\Downloads\boost_1_60_0\boost_1_60_0&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Robotics\Downloads\libusb-1.0.20\libusb&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.dialect.std.1060340803" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++1y" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1033680971" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
