@@ -30,13 +30,12 @@ void increaseRPM::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void increaseRPM::Execute() {
 	Robot::launchController->moves += 100;
-
 	Robot::launchController->spinToRpm();
 }
 
 // Make this return true when this Command no longer needs to run execute()
 bool increaseRPM::IsFinished() {
-    return false;
+    return true;
 }
 
 // Called once after isFinished returns true

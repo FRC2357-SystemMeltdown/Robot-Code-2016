@@ -32,9 +32,7 @@ void spinLauncherToRpm::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void spinLauncherToRpm::Execute() {
-	float i = 0.0;
- i = ((Robot::oi->RPM / 60 / 100) * 80);
- //Robot::launchController->spinToRpm(i);
+
 }
 
 // Make this return true when this Command no longer needs to run execute()

@@ -21,8 +21,8 @@ std::shared_ptr<Encoder> RobotMap::launchControllerCimR;
 std::shared_ptr<Encoder> RobotMap::launchControllerCimL;
 std::shared_ptr<SpeedController> RobotMap::launchControllertrigger;
 std::shared_ptr<DigitalInput> RobotMap::launchControllerlowLimit;
-std::shared_ptr<CANTalon> RobotMap::launchControllerWheelsR;
-std::shared_ptr<CANTalon> RobotMap::launchControllerWheelsL;
+std::shared_ptr<CANTalon> RobotMap::launchControllerWheelsTop;
+std::shared_ptr<CANTalon> RobotMap::launchControllerWheelsBot;
 std::shared_ptr<SpeedController> RobotMap::elevatorControllerElevator;
 std::shared_ptr<AnalogPotentiometer> RobotMap::elevatorControllerAnglePot;
 
@@ -59,11 +59,11 @@ void RobotMap::init() {
     launchControllerlowLimit.reset(new DigitalInput(4));
     lw->AddSensor("LaunchController", "lowLimit", launchControllerlowLimit);
     
-    launchControllerWheelsR.reset(new CANTalon(0));
-    lw->AddActuator("LaunchController", "WheelsR", launchControllerWheelsR);
+    launchControllerWheelsTop.reset(new CANTalon(0));
+    lw->AddActuator("LaunchController", "WheelsR", launchControllerWheelsTop);
     
-    launchControllerWheelsL.reset(new CANTalon(1));
-    lw->AddActuator("LaunchController", "WheelsL", launchControllerWheelsL);
+    launchControllerWheelsBot.reset(new CANTalon(1));
+    lw->AddActuator("LaunchController", "WheelsL", launchControllerWheelsBot);
     
     elevatorControllerElevator.reset(new TalonSRX(3));
     lw->AddActuator("ElevatorController", "Elevator", std::static_pointer_cast<TalonSRX>(elevatorControllerElevator));

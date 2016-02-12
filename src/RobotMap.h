@@ -30,8 +30,8 @@ public:
 	static std::shared_ptr<Encoder> launchControllerCimL;
 	static std::shared_ptr<SpeedController> launchControllertrigger;
 	static std::shared_ptr<DigitalInput> launchControllerlowLimit;
-	static std::shared_ptr<CANTalon> launchControllerWheelsR;
-	static std::shared_ptr<CANTalon> launchControllerWheelsL;
+	static std::shared_ptr<CANTalon> launchControllerWheelsTop;
+	static std::shared_ptr<CANTalon> launchControllerWheelsBot;
 	static std::shared_ptr<SpeedController> elevatorControllerElevator;
 	static std::shared_ptr<AnalogPotentiometer> elevatorControllerAnglePot;
 
