@@ -10,21 +10,17 @@
 
 #include <exception>
 
-namespace std {
 
-class PixyException: public exception {
+
+class PixyException: public std::exception {
 public:
 
-	PixyException(){
-		message = exception().what(); // Not sure what this file is trying to accomplish.
-	}								  // The java code has super(message), but I'm not quite sure what that is supposed to accomplish.
+	PixyException();				  // The java code has super(message), but I'm not quite sure what that is supposed to accomplish.
 	virtual ~PixyException();
 
 private:
 
-	const string message;
 };
 
-} /* namespace std */
 
 #endif /* SRC_PIXY_PIXYEXCEPTION_H_ */

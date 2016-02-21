@@ -31,11 +31,13 @@ void elevateLauncher::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void elevateLauncher::Execute() {
 	//Robot::elevatorController->SetSetpoint();
+	//Robot::elevatorController->windowL->
+	//Robot::pixyController
 }
 
 // Make this return true when this Command no longer needs to run execute()
 bool elevateLauncher::IsFinished() {
-    return Robot::elevatorController->OnTarget();
+	return false;
 }
 
 // Called once after isFinished returns true

@@ -43,6 +43,9 @@ public:
 	float getControllerLeftY();
 
 	bool getControllerButton(uint32_t i);
+
+	double targetRPM;
+	double targetElevation;
 };
 
 #endif
