@@ -27,12 +27,14 @@ spinLauncherToRpm::spinLauncherToRpm(): Command() {
 
 // Called just before this Command runs the first time
 void spinLauncherToRpm::Initialize() {
-
+	Robot::launchController->InitForPID();
 }
 
 // Called repeatedly when this Command is scheduled to run
 void spinLauncherToRpm::Execute() {
-	Robot::launchController->spinToRpm(Robot::oi->targetRPM);
+
+	Robot::launchController->spinToRpm(2000.0); //TODO RPM should be set as the rpm recorded for the relevant data points.
+
 }
 
 // Make this return true when this Command no longer needs to run execute()
@@ -42,11 +44,11 @@ bool spinLauncherToRpm::IsFinished() {
 
 // Called once after isFinished returns true
 void spinLauncherToRpm::End() {
-
+	Robot::launchController->DisablePID();
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void spinLauncherToRpm::Interrupted() {
-
+	End();
 }

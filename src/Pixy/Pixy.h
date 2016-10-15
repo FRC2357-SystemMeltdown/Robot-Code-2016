@@ -29,6 +29,7 @@ public:
 	static int cvt(char upper, char lower);
 	virtual void pixyReset();
 	PixyPacket readPacket(int Signature) throw (std::exception);
+
 };
 
 

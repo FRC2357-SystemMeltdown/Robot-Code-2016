@@ -30,7 +30,9 @@ void controllerDrive::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void controllerDrive::Execute() {
-	Robot::driveController->driveByController((Robot::oi->getControllerLeftY()/1.5), -((Robot::oi->getControllerLeftX())/1.5));
+	Robot::driveController->driveByController((Robot::oi->getControllerLeftY()), -(Robot::oi->getControllerLeftX()));
+	std::cout << "Sending Stick Y's to driveController" << std::endl;
+	std::cout << "X = " << Robot::oi->getControllerLeftX() << ", Y = " << Robot::oi->getControllerLeftY() << std::endl;
 }
 
 // Make this return true when this Command no longer needs to run execute()

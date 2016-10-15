@@ -31,6 +31,8 @@ void increaseElevation::Initialize() {
 void increaseElevation::Execute() {
 	//Robot::elevatorController->Disable();
 	//Robot::elevatorController->RaiseLauncher();
+	Robot::elevatorController->elevateToTarget(Robot::elevatorController->GetLastAngle() + 1);
+	std::cout << "IncreaseElevation: Sending " << (Robot::elevatorController->GetLastAngle() + 1) << " degrees to Elevator Controller." << std::endl;
 }
 
 // Make this return true when this Command no longer needs to run execute()

@@ -18,7 +18,7 @@ void panToCenter::Initialize()
 	PIDCommand::GetPIDController()->SetContinuous(false);
 	PIDCommand::GetPIDController()->SetPIDSourceType(PIDSourceType::kDisplacement);
 	PIDCommand::GetPIDController()->SetInputRange(0.0, 320.0);
-	PIDCommand::GetPIDController()->SetOutputRange(-90.0, 90.0);
+	PIDCommand::GetPIDController()->SetOutputRange(-2.0, 2.0);
 	PIDCommand::GetPIDController()->SetPercentTolerance(5);
 	PIDCommand::GetPIDController()->SetSetpoint(160.0);
 

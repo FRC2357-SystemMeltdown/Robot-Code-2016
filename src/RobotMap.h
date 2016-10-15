@@ -31,7 +31,7 @@ public:
 	static std::shared_ptr<DigitalInput> launchControllerlowLimit;
 	static std::shared_ptr<CANTalon> launchControllerWheelsTop;
 	static std::shared_ptr<CANTalon> launchControllerWheelsBot;
-	static std::shared_ptr<Relay> launchControllertrigger;
+	static std::shared_ptr<Relay> triggerControllertrigger;
 	static std::shared_ptr<Servo> pixyControllerPixyPan;
 	static std::shared_ptr<CANTalon> elevatorControllerWindowL;
 	static std::shared_ptr<CANTalon> elevatorControllerWindowR;

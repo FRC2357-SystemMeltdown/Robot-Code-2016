@@ -11,6 +11,7 @@ Pixy::Pixy()
 	:pixy(19200, SerialPort::kMXP)
 	{
 		pixy.SetReadBufferSize(14);
+		//pixy.SetTimeout(0.0);
 	}
 
 Pixy::~Pixy(){
@@ -36,6 +37,7 @@ PixyPacket Pixy::readPacket(int signature) throw (std::exception){
 
 	}
 	if(bytesRead < 32) {
+		std::cout << "Bytes read = " << bytesRead << std::endl;
 		return PixyPacket::UNINITIALIZED;
 	}
 	for (int i = 0; i <= 16; i++) {
@@ -68,5 +70,12 @@ PixyPacket Pixy::readPacket(int signature) throw (std::exception){
 
 	PixyPacket pkt = packets[signature - 1];
 	packets[signature - 1] = PixyPacket::UNINITIALIZED;
+	if(pkt.X == -1 ) {
+		pkt.X = 160;
+		pkt.Y = 100;
+		pkt.Height = 0;
+		pkt.Width = 0;
+		std::cout << "Pixy: No object detected" << std::endl;
+	}
 	return pkt;
 }
